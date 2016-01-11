@@ -173,7 +173,8 @@ function GM:BitsToKillAction2(bits)
 end
 
 function GM:PlayerCanHearPlayersVoice(listen, talk)
-	return listen:Team() == talk:Team() or listen:Team() == TEAM_SPECTATOR or self:GetRoundEnded(), false
+	--return listen:Team() == talk:Team() or listen:Team() == TEAM_SPECTATOR or self:GetRoundEnded(), false
+	return true
 end
 
 function GM:KeyPress(pl, key)
